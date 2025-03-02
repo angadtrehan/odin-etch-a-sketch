@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="module" src="./scripts/script.js"></script>
+</head>
+<body>
+    <div class="generation">
+        <p class="explainer">Enter grid size here (between 1 and 100)</p>
+        <input type="number" name="grid" id="grid">
+        <button type="button">Generate new grid</button>
+    </div>
+    <div class="mode">
+        <div class="mode-type"><label for="red-only">Red Only </label><input type="radio" name="modes" id="red-only" value="red-only" checked="checked"></div>
+        <div class="mode-type"><label for="random">Random </label><input type="radio" name="modes" id="random" value="random"></div>
+        <div class="mode-type"><label for="button-colours">Button Colours </label><input type="radio" name="modes" id="button-colours" value="button-colours"></div>
+    </div>
+    <div class="grid-area">
+    </div>
+</body>
+</html>

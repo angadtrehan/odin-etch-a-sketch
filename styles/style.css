@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.generation {
+    background-color: bisque;
+    color: black;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.generation button {
+    border: none;
+    background-color: chocolate;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.generation input {
+    background: none;
+    border: 0;
+    outline: 0;
+    border-bottom: solid 2px black;
+}
+
+.grid-area {
+    box-sizing: content-box;
+    height: 90vh;
+    width: 90vh;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    align-content: start;
+}
+.square {
+    flex-grow: 0;
+    /* flex-basis: calc(80vh/3);
+    height: calc(80vh/3); */
+    border: solid 1px black;
+}
+.color-it-red {
+    background-color: red;
+}
+.color-it-blue {
+    background-color: blue;
+}
+.color-it-black {
+    background-color: black;
+}
+.color-it-green {
+    background-color: green;
+}
+
+.mode {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    margin: 5px 10px 0 0;
+    gap: 1vh;
+}
